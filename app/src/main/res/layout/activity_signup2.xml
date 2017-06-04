@@ -19,9 +19,9 @@
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteY="413dp"
-        tools:layout_editor_absoluteX="136dp" />
+        android:text="SIGNUP"
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="413dp" />
 
     <EditText
         android:id="@+id/editText2"
@@ -40,7 +40,7 @@
         android:ems="10"
         android:hint="Last Name"
         android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteX="72dp"
         tools:layout_editor_absoluteY="221dp" />
 
     <EditText
@@ -50,8 +50,7 @@
         android:ems="10"
         android:hint="Username"
         android:inputType="textPersonName"
-        android:text="Name"
-        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteX="72dp"
         tools:layout_editor_absoluteY="264dp" />
 
     <EditText
@@ -59,7 +58,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="Password"
         android:inputType="textPassword"
-        tools:layout_editor_absoluteX="71dp"
-        tools:layout_editor_absoluteY="316dp" />
+        tools:layout_editor_absoluteX="72dp"
+        tools:layout_editor_absoluteY="350dp" />
+
+    <EditText
+        android:id="@+id/editText11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="email@ucsd.edu"
+        android:inputType="textEmailAddress"
+        tools:layout_editor_absoluteX="72dp"
+        tools:layout_editor_absoluteY="307dp" />
 </android.support.constraint.ConstraintLayout>
