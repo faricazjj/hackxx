@@ -16,7 +16,6 @@ public class LoginActivity{
         mAuth.signInWithEmailAndPassword(user, pass);
     }
 
-    private FirebaseAuth.AuthStateListener mAuthListener;
 
 }
 

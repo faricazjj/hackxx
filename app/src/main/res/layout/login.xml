@@ -68,11 +68,7 @@
                 style="?android:textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-<<<<<<< HEAD
                 android:onClick="signIn"
-=======
-                android:onClick="authentication"
->>>>>>> 33930ed05f1ac431f5eabb49bc326878ddcd1c70
                 android:layout_marginTop="16dp"
                 android:text="@string/action_sign_in"
                 android:textStyle="bold" />

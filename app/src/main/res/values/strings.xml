@@ -15,12 +15,8 @@
     </string>
 
 
-    <string name="title_activity_login">Sign in</string>
 
     <string name="title_activity_main">MainActivity</string>
-
-
-    <string name="title_activity_main">Main Activity</string>
     <string name="title_activity_login">Sign in</string>
 
 </resources>
