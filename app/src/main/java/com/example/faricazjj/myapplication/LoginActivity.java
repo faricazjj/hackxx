@@ -10,9 +10,6 @@ public class LoginActivity{
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
 
-    public Task<AuthResult> signInWithEmailAndPassword (String email, String password){
-        
-    }
 }
 
 

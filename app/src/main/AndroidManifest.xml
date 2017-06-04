@@ -15,29 +15,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".SignupActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-<<<<<<< HEAD
-            android:name=".LoginActivity"
-            android:label="@string/title_activity_login"></activity>
-=======
             android:name=".MainActivity"
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBar" />
-<<<<<<< HEAD
         <activity android:name=".ProfileActivity" />
-        <activity android:name=".What"></activity>
-=======
-        <activity android:name=".ProfileActivity"></activity>
->>>>>>> cb9af49fc2c3e13ccda08daaf71f6f80caaaca41
->>>>>>> 04cfbd00dc475e2389570258110b4543babb26b7
+        <activity android:name=".SignupActivity"></activity>
     </application>
 
 </manifest>

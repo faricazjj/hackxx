@@ -8,12 +8,11 @@
     tools:context="com.example.faricazjj.myapplication.SignupActivity">
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/editText15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
+        android:layout_weight="0.44"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name" />
-
 </LinearLayout>
