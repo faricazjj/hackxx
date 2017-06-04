@@ -7,6 +7,7 @@ import  java.util.Scanner;
 
 public class LoginActivity{
     private FirebaseAuth mAuth;
+
     public void signIn() {
         FirebaseAuth.getInstance();
         Scanner input = new Scanner(System.in);
@@ -14,6 +15,9 @@ public class LoginActivity{
         String pass = input.nextLine();
         mAuth.signInWithEmailAndPassword(user, pass);
     }
+
+    private FirebaseAuth.AuthStateListener mAuthListener;
+
 }
 
 
