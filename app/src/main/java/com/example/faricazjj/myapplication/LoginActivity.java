@@ -11,7 +11,7 @@ public class LoginActivity{
     private FirebaseAuth.AuthStateListener mAuthListener;
 
     public Task<AuthResult> signInWithEmailAndPassword (String email, String password){
-        
+
     }
 }
 
