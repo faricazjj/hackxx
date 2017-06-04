@@ -1,6 +1,5 @@
 package com.example.faricazjj.myapplication;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.AuthResult;
+
 import com.google.firebase.auth.FirebaseAuth;
 
 import  java.util.Scanner;
@@ -8,10 +7,12 @@ import  java.util.Scanner;
 
 public class LoginActivity{
     private FirebaseAuth mAuth;
-    private FirebaseAuth.AuthStateListener mAuthListener;
-
-    public Task<AuthResult> signInWithEmailAndPassword (String email, String password){
-
+    public void signIn() {
+        FirebaseAuth.getInstance();
+        Scanner input = new Scanner(System.in);
+        String user = input.nextLine();
+        String pass = input.nextLine();
+        mAuth.signInWithEmailAndPassword(user, pass);
     }
 }
 
