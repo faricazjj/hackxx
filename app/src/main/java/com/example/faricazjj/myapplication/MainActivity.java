@@ -8,7 +8,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
-
+    private EditText
+    private Button signUp;
+    private Firebase mRef;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +26,17 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+        Firebase.setAndroidContext(this);
+        mRef = new Firebase("https://hackxx-92204.firebaseio.com/");
+        mSendData = (Button) findViewById(R.id.sendData);
+        mSednData.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Firebase mRefChild = mRefChild = mRef.child("Name");
+                mRefChild.setValue("Hello");
+            }
+        }
     }
 
 }

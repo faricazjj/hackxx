@@ -10,4 +10,9 @@ public class SignupActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup2);
     }
+
+    public void onSignUp(View Button) {
+        //after clicking the button
+
+    }
 }
