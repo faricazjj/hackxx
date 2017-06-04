@@ -4,16 +4,20 @@ import android.support.v7.app.AppCompatActivity;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.util.*;
 
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.*;
 import android.support.annotation.*;
 import com.google.firebase.database.*;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class SignupActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
@@ -54,11 +58,19 @@ public class SignupActivity extends AppCompatActivity {
         String email = emailBox.getText().toString();
         String password = passwordBox.getText().toString();
 
-        Log.i("DEBUG-EMAIL", email);
-        Log.i("DEBUG-PASSWORD", password);
-        mAuth.createUserWithEmailAndPassword(email, password);
-  //      FirebaseDatabase database = FirebaseDatabase.getInstance();
-    //    DatabaseReference myRef = database.getReference("message");
-      //  myRef.setValue("Hello, World!");
+        Task<AuthResult> userEvent = mAuth.createUserWithEmailAndPassword(email, password);
+        String uid = userEvent.getResult().getUser().getUid();
+
+
+        Map<String,Object> map = new HashMap<>();
+        map.put("Email", email);
+        map.put("Firstname", first);
+        map.put("Lastname", last);
+        map.put("Username", username);
+
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference userRef = database.getReference("Users");
+
+        userRef.setValue(map);
     }
 }
